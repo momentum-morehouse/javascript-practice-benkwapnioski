@@ -6,15 +6,38 @@
 //
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
+function remove(array, potential) {
+  let newArray = [];
+  for (let item of array) {
+    if (item !== potential) {
+      newArray.push(item)
+    }
+  }
+  return newArray
+}
+
 
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
+function sum(numbers) {
+  let total = 0;
+  for (let number of numbers) {
+    total = total + number;
+  }
+  return total
+}
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
+function average(numbers) {
+  let average = 0;
+  for (let number of numbers) {
+    average = average / number;
+  }
+}
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
