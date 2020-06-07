@@ -33,14 +33,15 @@ function sum(numbers) {
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 function average(numbers) {
-  let average = 0;
-  for (let number of numbers) {
-    average = average / number;
-  }
+  return sum(numbers) / numbers.length || undefined;
 }
+
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+function minimum(numbers) {
+
+}
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
