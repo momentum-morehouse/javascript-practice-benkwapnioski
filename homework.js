@@ -39,16 +39,16 @@ function average(numbers) {
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
-  function minimum(numbers){
-    let minimum = numbers[0]
-    for (let number of numbers){
-      if (number < minimum){
-        minimum = number
-      }
+function minimum(numbers) {
+  let minimum = numbers[0]
+  for (let number of numbers) {
+    if (number < minimum) {
+      minimum = number
     }
-    return minimum
   }
-  
+  return minimum
+}
+
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
 // implement sorting ourselves, however.
@@ -73,9 +73,25 @@ function average(numbers) {
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
 
+// function selectionSort(array) {
+//   let sortedArray = []
+//   let arrayCopy = array.slice();
+//   for (let i = 1; 1 <= array.length; i++) {
+//     let lowestNumber = minimum(arrayCopy);
+//     sortedArray.push(lowestNumber);
+//     let idx = arrayCopy.indexOf(lowestNumber)
+//     arrayCopy.splice(idx, 1);
+//   }
+//   return sortedArray
+
+// }
+
 // 7. Create a function called `textList` that takes an array and joins its elements
 // into a string separated by commas.
 //
 // For example, `textList(['Cadence', 'Ordel', 'Marion'])` results in the string
 // `"Cadence,Ordel,Marion"`.
-
+function textList(string){
+  string.join(',');
+  return string
+}
